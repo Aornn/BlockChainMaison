@@ -7,3 +7,13 @@ Pour le lancer il voud faudra python et flask.
 2 - Lancer le deuxieme noeud `python deuxiemeNoeud/noeuds.py`<br>
 3 - Lancer le troisieme noeud `python troisiemeNoeud/noeuds.py`<br>
 4 - Lancer le validator `python validator/validator.py`<br>
+
+<br>
+
+Pour ajouter un bloc faire une requete sur l'adresse IP d'un bloc sur l'endpoint "/sendblock". <br>
+Exemple : <br>
+```
+curl --location --request POST 'http://127.0.0.1:5003/sendblock' \
+--header 'Content-Type: application/json' \
+--data-raw '{"Name" : "truc", "From" : "machin", "To" : "Bidule"}'
+```
